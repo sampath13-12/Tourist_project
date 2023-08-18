@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <title>Homepage</title>
+    <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/afce916556.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body style="background-color: rgb(54, 146, 150);">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+            <img src="/static/image/logo.png" height="50px" width="40px">
+                HappyTour
+            </a>
+        </nav>
+
+<div class="container">
+    <div class="row">
+            <div class="pt-5 pb-5 col-lg-4 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/image/varansi.png" class="card-img-top" height="200px" width="200px">
+                    <div class="card-body">
+                    <h5 class="card-title">Varanasi Lord Shiva Temple</h5>
+                    <p class="card-text">Varanasi is a city in the northern Indian state of Uttar Pradesh dating to the 11th century B.C.</p>
+                    <a href="{% url 'varanasiPage' %}" class="btn btn-primary">EXPLORE</a>
+                    </div>
+                </div>
+            </div>    
+        
+            <div class="pt-5 col-lg-4 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/image/shiridi.png" class="card-img-top" height="200px" width="200px">
+                    <div class="card-body">
+                    <h5 class="card-title">Shiridi Lord SaiBaba Temple</h5>
+                    <p class="card-text">Shirdi is a town in the state of Maharashtra, in western India Sai Baba..</p>
+                    <a href="{% url 'shiridiPage' %}" class="btn btn-primary">EXPLORE</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pt-5 col-lg-4 ">
+                <div class="card" style="width: 18rem;">
+                    <img src="/static/image/puri.png" class="card-img-top" height="200px" width="200px">
+                    <div class="card-body">
+                    <h5 class="card-title">Shree Jagannath Temple Puri</h5>
+                    <p class="card-text">The Jagannath Temple is an important Hindu temple dedicated to Jagannath,Lord Vishnu..</p>
+                    <a href="{% url 'jagannathPage' %}" class="btn btn-primary">EXPLORE</a>
+                    </div>
+                </div>
+            </div> 
+    </div>
+
+
+
+    <div class="row">
+        <div class="pb-5 col-lg-4 ">
+            <div class="card" style="width: 18rem;">
+                <img src="/static/image/tirupathi.png" class="card-img-top" height="200px" width="200px">
+                <div class="card-body">
+                <h5 class="card-title">Tirupathi Lord Venkateswara Swamy Temple </h5>
+                <p class="card-text">Tirupati is a city in the Indian state of Andhra Pradesh. Its Sri Venkateswara Temple Tirumala Hills..</p>
+                <a href="{% url 'tirupathiPage' %}" class="btn btn-primary">EXPLORE</a>
+                </div>
+            </div>
+        </div>    
+    
+        <div class="col-lg-4 ">
+            <div class="card" style="width: 18rem;">
+                <img src="/static/image/rameswaram.png" class="card-img-top" height="200px" width="200px">
+                <div class="card-body">
+                <h5 class="card-title">Lord Shiva Temple</h5>
+                <p class="card-text">Ramanathaswamy Temple (Rāmanātasvāmi Kōyil) is a Hindu temple dedicated to the god Shiva located on Rameswaram island in the state of Tamil Nadu, India.</p>
+                <a href="{% url 'rameswaramPage' %}" class="btn btn-primary">EXPLORE</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-lg-4 ">
+            <div class="card" style="width: 18rem;">
+                <img src="/static/image/vijayawada.png" class="card-img-top" height="200px" width="200px">
+                <div class="card-body">
+                <h5 class="card-title">Kanaka Durga Ammavari Temple</h5>
+                <p class="card-text">Kanaka Durga Temple, also known as Sri Kanaka Durgamma Devasthanam is a Hindu temple dedicated to Kanaka Durga</p>
+                <a href="{% url 'kanakadurgaPage' %}" class="btn btn-primary">EXPLORE</a>
+                </div>
+            </div>
+        </div> 
+    </div>            
+</div>      
+
+
+    </body>
+</html>
